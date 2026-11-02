@@ -1,0 +1,89 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Contact Us | Mangaung Community Channel</title>
+    <meta name="description" content="Get in touch with the municipality local council. Find our contact information and send us a message.">
+    <meta name="keywords" content="Mangaung contact, local ward councillor, Bloemfontein, Botshabelo, Free State">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Mangaung Community Channel</h1>
+    <div>
+    <nav class="mainnav" id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="enquiry.html">Enquiry</a>
+    <a href="service.html">Services</a> 
+    <a href="contact.html" class="active">Contact</a>
+    <a href="about.html">About</a>
+    </nav>
+    </div>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+
+    <h3>Head Office - Bloemfontein</h3>
+    <p>
+        2nd Floor<br>
+        Bram Fischer Building<br>
+        105 Nelson Mandela Drive<br>
+        Bloemfontein<br>
+        Free State<br>
+        9301<br>
+        Phone: 051 405 8494/0800 111 300<br>
+    </p>
+     <h3>Branch Office - Botshabelo</h3>
+    <p>
+        45 Setsoto Street<br>
+        Botshabelo<br>
+        Free State<br>
+        9781<br>
+        Phone: 051 765 4321<br>
+    </p>
+
+    <h3>Send Us a Message</h3>
+
+    <form id="contact-form" action="mailto:info@mangaungcommunity.co.za" method="post" enctype="text/plain" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name">
+        <span class="error-msg" id="error-name"></span>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+        <span class="error-msg" id="error-email-contact"></span>
+
+        <label for="message-type">Type of Message:</label>
+        <select id="message-type" name="message-type">
+            <option value="">-- Select Type --</option>
+            <option value="General">General Question</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Compliment">Compliment</option>
+             <option value="Business">Business</option>
+        </select>
+        <span class="error-msg" id="error-type"></span>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <span class="error-msg" id="error-subject"></span>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <span class="error-msg" id="error-message-contact"></span>
+
+        <input type="submit" value="Send Message" id="contact-submit">
+    </form>
+    
+    <div id="contact-response" class="response-box" style="display: none;"></div>
+
+    <hr>
+
+    <iframe
+        src="https://www.google.com/maps?q=Bloemfontein,Free%20State&output=embed"
+        width="460" height="200"  >
+    </iframe>
+    <hr>
+    <b><p style="text-align: center;">At the heart of it all - @2026</p></b>
+
+    </body>
+    </html>

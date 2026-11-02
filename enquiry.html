@@ -1,0 +1,70 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Enquiry | Mangaung Community Channel</title>
+    <meta name="description" content="Have questions or need more information? Fill out the enquiry form to get in touch with your ward councillor.">
+    <meta name="keywords" content="Mangaung enquiry, contact, Bloemfontein, Free State">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Mangaung Community Channel</h1>
+    <div>
+    <nav class="mainnav" id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="enquiry.html" class="active">Enquiry</a>
+    <a href="service.html">Services</a> 
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    </nav>
+    </div>
+
+    <hr>
+    <h2>Enquiry Form</h2>
+    <p>
+        Fill the form below and we will get back to you as soon as possible.
+    </p>
+     <form id="enquiry-form" action="#" method="post">
+
+       <B><label for="fullname">Full Name</label></B><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+       <b><label for="email">Email Address</label></b><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+       <b><label for="phone">Phone Number</label></b><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+       <b><label>What is your enquiry about?</label></b><br>
+
+        <input type="radio" id="volunteer" name="enquiryType" value="Volunteering">
+        <label for="volunteer">Becoming a Volunteer</label><br>
+
+        <input type="radio" id="sponsor" name="enquiryType" value="Sponsorship">
+        <label for="sponsor">Becoming a Sponsor</label><br><br>
+
+
+     <label for="service-interest">Which specific service are you interested in?</label>
+        <select id="service-interest" name="service-interest">
+            <option value="">-- Please Select --</option>
+            <option value="News">Local News Broadcasts</option>
+            <option value="Events">Community Event Coverage</option>
+            <option value="Advertising">Advertising and Sponsorship</option>
+            <option value="Workshops">Skills Development Workshops</option>
+        </select>
+        <span class="error-msg" id="error-service"></span>
+          <b><label for="message">Your Message</label></b><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+        <input type="submit" value="Send Enquiry">
+        </form>
+    <div id="enquiry-response" class="response-box" style="display: none;"></div>
+      
+    <hr>
+
+    <b><p style="text-align: center;">At the heart of it all - @2026</p></b>
+
+
+
+
+</body>
+</html>

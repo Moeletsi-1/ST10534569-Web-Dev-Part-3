@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>Our Services | Mangaung Community Channel</title>
+    <meta name="description" content="Find out about the services offered by the Mangaung Community Channel, including local news broadcasts, community event coverage, and skills development workshops.">
+    <meta name="keywords" content="Mangaung services, community news, event coverage, skills development, Bloemfontein">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Mangaung Community Channel</h1>
+    <div>
+    <nav class="mainnav" id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="enquiry.html">Enquiry</a>
+    <a href="service.html" class="active">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    </nav>
+    </div>
+     <hr>
+    <h2>Community Bulletin Board</h2>
+    <p>Post your concerns, sell local products, or share community news. Posts are saved directly in your browser.</p>
+
+    <h3>Create a New Post</h3>
+    <form id="post-form">
+        <label for="post-name">Your Name:</label>
+        <input type="text" id="post-name" required placeholder="e.g., John Doe">
+
+        <label for="post-category">Category:</label>
+        <select id="post-category" required style="width: 100%; padding: 0.65rem 0.85rem; margin-bottom: 1rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: inherit;">
+            <option value="Concern">Concern</option>
+            <option value="Product">Local Product</option>
+            <option value="Event">Community Event</option>
+            <option value="Announcement">Announcement</option>
+        </select>
+
+        <label for="post-title">Post Title:</label>
+        <input type="text" id="post-title" required placeholder="e.g., Streetlights out in Phase 4">
+
+        <label for="post-content">Message:</label>
+        <textarea id="post-content" rows="4" required placeholder="Provide more details..."></textarea>
+
+        <input type="submit" value="Publish to Board">
+    </form>
+
+    <hr>
+
+     <h3>Latest Posts</h3>
+    
+    <div class="controls-container">
+        <input type="text" id="post-search" placeholder="Search posts by title, category, or keyword...">
+    </div>
+
+    <div id="posts-container" class="bulletin-grid">
+    </div>
+    <hr>
+
+   <h2>Our Services</h2>
+
+    <p>
+        The Mangaung Community Channel offers a number of services to the community.<br>
+        Below is more information about each of our offerings.
+    </p>
+
+    <ul id="services-container">
+  
+    </ul>
+
+    <p><b>
+        Interested in any of our services? <a href="enquiry.html">Send us an enquiry</a>.
+    </b> </p>
+
+    <hr>
+
+    <b><p style="text-align: center;">At the heart of it all - @2026</p></b>
+
+    <script src="script.js"></script>
+
+
+
+
+ </body>
+</html>
